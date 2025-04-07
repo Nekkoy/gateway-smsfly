@@ -77,7 +77,7 @@ class SendMessageService extends AbstractSendMessageService
     private function channelsms() {
         $request = [
             "ttl" => 300,
-            "text" => $this->message
+            "text" => $this->message->text
         ];
 
         $SenderName = $this->config->name_sms;
